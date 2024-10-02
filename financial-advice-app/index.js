@@ -99,10 +99,20 @@ async function fetchReport(data) {
     ]
 
     try {
-        renderReport()
+        const url = "https://financial-advice.maucodev.workers.dev/"
+
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: ''
+        })
+        const data = await response.json()
+        console.log(data)
     } catch (err) {
-        loadingArea.innerText = 'There was an error fetching report.'
-        console.error('error: ', err)
+        console.error(err.message)
+        loadingArea.innerText = 'Unable to access AI. Please refresh and try again'
     }
 }
 
