@@ -4,14 +4,14 @@ A Node.js project optimized for Cloudflare deployment, integrating AI services t
 
 ## Cloudflare commands
 
-```
 Create a worker
 
-$ npm create cloudflare@latest
+```
+npm create cloudflare@latest
 ```
 
-```
 Deploy
 
-$ npx wrangler deploy
+```
+npx wrangler deploy
 ```
