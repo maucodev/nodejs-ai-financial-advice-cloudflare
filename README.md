@@ -15,3 +15,9 @@ Deploy
 ```
 npx wrangler deploy
 ```
+
+Configure an environment variable
+
+```
+npx wrangler secret put VARIABLE_NAME
+```
